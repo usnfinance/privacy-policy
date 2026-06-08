@@ -1,3 +1,6 @@
+---
+robots: noindex
+---
 # Privacy Policy — USN Finance
 
 **Effective date:** 06/08/2026  
