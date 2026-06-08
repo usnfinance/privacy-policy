@@ -1,250 +1,248 @@
-# Политика конфиденциальности USN Finance
+# Privacy Policy — USN Finance
 
-**Дата вступления в силу:** 08.06.2026  
-**Последнее обновление:** 08.06.2026
+**Effective date:** 06/08/2026  
+**Last updated:** 06/08/2026
 
-## 1. Кто мы
+## 1. Who we are
 
-Оператор мобильного приложения **USN Finance** (далее — «Приложение», «мы»):
+Operator of the **USN Finance** mobile application (the “App”, “we”, “us”):
 
-- **ФОП Нинько Сергей Федорович**
-- **Адрес регистрации:** вул. Червоної Калини, 17д, кв. 60, м. Київ, 02225, Україна
+- **FOP Nynko Serhii Fedorovych** (sole proprietor, Ukraine)
+- **Registered address:** 17d Chervonoi Kalyny St., apt. 60, Kyiv, 02225, Ukraine
 - Email: **usnfinance@gmail.com**
 
-Актуальная версия Политики всегда доступна по адресу: [https://usnfinance.github.io/privacy-policy/ru.html](https://usnfinance.github.io/privacy-policy/ru.html)
+The current version of this Policy is always available at: [https://usnfinance.github.io/privacy-policy/en.html](https://usnfinance.github.io/privacy-policy/en.html)
 
-Другие языки: [English](https://usnfinance.github.io/privacy-policy/en.html) · [Українська](https://usnfinance.github.io/privacy-policy/ua.html)
+Other languages: [Українська](https://usnfinance.github.io/privacy-policy/ua.html) · [Русский](https://usnfinance.github.io/privacy-policy/ru.html)
 
-## 2. Общие положения
+## 2. Overview
 
-Эта Политика объясняет, какие персональные и учётные данные мы собираем, как их используем, кому передаём и какие права есть у вас.
+This Policy explains what personal and account-related data we collect, how we use it, who we share it with, and what rights you have.
 
-Используя Приложение, вы соглашаетесь с этой Политикой. Если вы не согласны — не пользуйтесь Приложением.
+By using the App, you agree to this Policy. If you do not agree, please do not use the App.
 
-Приложение предназначено для взрослых пользователей (18+) для ведения личного и семейного финансового учёта. Мы сознательно не собираем данные детей младше 13 лет.
+The App is intended for adults (18+) for personal and family financial tracking. We do not knowingly collect data from children under 13.
 
-## 3. Какие данные мы обрабатываем
+## 3. Data we process
 
-### 3.1. Учётная запись и профиль
+### 3.1. Account and profile
 
-- **Email** — для входа через magic link (одноразовая ссылка в письме);
-- **Никнейм** — задаётся при регистрации, один на учётную запись; отображается в группах учёта;
-- **Язык интерфейса** — сохранение ваших настроек.
+- **Email address** — for sign-in via magic link (one-time link sent by email);
+- **Nickname** — set once at registration, one per account; displayed in accounting groups;
+- **Interface language** — your preference settings.
 
-### 3.2. Финансовые и учётные данные
+### 3.2. Financial and accounting data
 
-- суммы операций, **остатки на счетах в разрезе валют**, даты, категории, структура учёта;
-- названия групп учёта;
-- **шифруются на устройстве (AES-256-GCM) и хранятся на сервере в зашифрованном виде:** заметки к операциям, названия объектов учёта, а также все поля валют в справочнике группы — **название**, **код** и **символ** валюты;
-- суммы операций, **остатки на счетах** (сумма и идентификатор валюты) и даты хранятся на сервере в открытом виде; остатки обновляются на основе внесённых операций.
+- transaction amounts, **account balances by currency**, dates, categories, accounting structure;
+- group names;
+- **encrypted on the device (AES-256-GCM) and stored on the server in encrypted form:** transaction notes, accounting object names, and all currency reference fields — **name**, **code**, and **symbol**;
+- transaction amounts, **account balances** (amount and currency identifier), and dates are stored on the server in plain form; balances are updated based on entered transactions.
 
-### 3.3. Криптографические данные
+### 3.3. Cryptographic data
 
-- публичные ключи и зашифрованные приватные ключи (для совместного доступа к группам);
-- на вашем устройстве в защищённом хранилище: токены сессии, мастер-ключ, ключи групп.
+- public keys and encrypted private keys (for shared group access);
+- on your device in secure storage: session tokens, master key, group keys.
 
-**Секретная фраза**, которую вы создаёте при регистрации группы, **не передаётся на наш сервер**. Она используется только на устройстве для вывода ключей шифрования.
+The **secret phrase** you create when setting up a group is **not sent to our server**. It is used only on your device to derive encryption keys.
 
-### 3.4. Распознавание чеков (только по вашему запросу)
+### 3.4. Receipt recognition (only when you request it)
 
-По вашему запросу Приложение может обрабатывать:
+At your request, the App may process:
 
-- **фото чека** (камера или галерея);
-- **текст чека** (вставка, веб-страница по URL, QR/штрихкод);
-- **названия категорий** учёта для сопоставления позиций.
+- **receipt photos** (camera or gallery);
+- **receipt text** (paste, web page URL, QR/barcode);
+- **category names** for matching line items.
 
-Эти данные передаются на наш сервер (Supabase Edge Function) и далее — **OpenAI** для автоматического распознавания. Обработка выполняется **в рамках одного запроса**: результат возвращается в Приложение.
+This data is sent to our server (Supabase Edge Function) and then to **OpenAI** for automated recognition. Processing happens **within a single request**; the result is returned to the App.
 
-Содержимое чека (изображение или текст) **не сохраняется в нашей базе данных**. Мы **не ведём журнал** распознавания чеков. Обработка на стороне OpenAI регулируется [их политикой конфиденциальности](https://openai.com/policies/privacy-policy).
+Receipt content (image or text) is **not stored in our database**. We do **not** keep a receipt recognition log. Processing by OpenAI is governed by [their privacy policy](https://openai.com/policies/privacy-policy).
 
-При списании кредитов за распознавание (если эта функция включена) в базе могут сохраняться **только служебные данные**: количество токенов OpenAI, сумма списания, идентификатор профиля и группы — **без** содержимого чека.
+When scan credits are charged (if that feature is enabled), we may store **operational data only** in the database: OpenAI token counts, charge amount, profile and group identifiers — **not** receipt content.
 
-### 3.5. Совместные группы
+### 3.5. Shared groups
 
-Если вы приглашаете участника в группу, мы обрабатываем **email** приглашённого пользователя для поиска зарегистрированного аккаунта и отправки приглашения.
+If you invite a member to a group, we process the invitee’s **email address** to find a registered account and send an invitation.
 
-### 3.6. Роли, доступ и совместное использование данных
+### 3.6. Roles, access, and shared data
 
-Приложение использует **группы учёта** — общее пространство, в котором несколько пользователей могут вести один финансовый учёт.
+The App uses **accounting groups** — shared spaces where multiple users can maintain one set of financial records.
 
-#### Уровни доступа
+#### Access levels
 
-**Учётная запись** — привязана к вашему email. При первой регистрации создаётся **один профиль пользователя**; **никнейм** задаётся один раз при регистрации и отображается во всех группах, где вы участвуете. Один email может состоять в нескольких группах учёта с этим же профилем.
+**Account** — tied to your email. On first registration we create **one user profile**; your **nickname** is set once at registration and shown in every group you join. One email may belong to multiple accounting groups under the same profile.
 
-**Владелец группы** — пользователь, создавший группу. Владелец может:
+**Group owner** — the user who created the group. The owner may:
 
-- отправлять приглашения другим пользователям по email;
-- переименовывать и удалять группу;
-- удалять непринятые или отклонённые приглашения (участников со статусом «Ожидает» или «Отклонён»);
-- отзывать доступ у активных участников;
-- повторно активировать доступ у участников со статусом «Доступ отозван»;
-- видеть список участников группы и их никнеймы.
+- send invitations to other users by email;
+- rename or delete the group;
+- remove pending or declined invitations (members with **Pending** or **Declined** status);
+- revoke access for active members;
+- reactivate access for members with **Access revoked** status;
+- see the member list and nicknames.
 
-**Участник (пользователь группы)** — приглашённый пользователь. Он может принять или отклонить приглашение (статус «Ожидает»). После принятия получает доступ к данным этой группы наравне с другими активными участниками (с учётом наличия ключа шифрования, см. ниже).
+**Group member** — an invited user. They may accept or decline an invitation (**Pending** status). After accepting, they gain access to that group’s data like other active members (subject to encryption key availability, see below).
 
-Отдельной роли «администратор» в приложении нет — есть только **владелец** и **участник**.
+There is no separate “admin” role — only **owner** and **member**.
 
-#### Статусы участника
+#### Member statuses
 
-Каждый участник группы имеет статус:
+- **Pending** — invitation sent, not yet accepted;
+- **Active** — full group access;
+- **Declined** — invitation rejected;
+- **Access revoked** — owner revoked access;
+- **Deleted** — the user deleted their account. They may appear in the group member list with this status and a retained nickname; they have no access to group data. Past entries they created may remain in the ledger with authorship shown.
 
-- **Ожидает** — приглашение отправлено, пользователь ещё не принял;
-- **Активен** — полноценный доступ к группе;
-- **Отклонён** — пользователь отклонил приглашение;
-- **Доступ отозван** — владелец отозвал доступ;
-- **Удалён** — пользователь удалил свою учётную запись. В списке участников группы он может отображаться с этим статусом и сохранённым никнеймом; доступ к данным группы отсутствует. Ранее внесённые операции могут оставаться в учёте с указанием авторства.
+Only **active** members use group data in the normal way. Members with **Deleted** status remain visible in the list for transparency of entry authorship but cannot access the group. Access to a specific group’s data is provided in the context of your **current session** (the group selected in the App).
 
-Только **активные** участники работают с данными группы в обычном режиме. Участники со статусом «Удалён» в списке видны для прозрачности авторства записей, но не имеют доступа к группе. Доступ к данным конкретной группы предоставляется в контексте **текущей сессии** (выбранная группа в Приложении).
+#### What other members can see
 
-#### Какие данные видны другим участникам группы
+If you belong to a group, other members of that group with access to its data or member list can see **nicknames of all group members** (including invited, access-revoked, and deleted accounts) and membership status.
 
-Если вы состоите в группе, другие участники этой же группы, имеющие доступ к её данным или списку участников, могут видеть **никнеймы всех участников** группы (включая приглашённых, с отозванным доступом и удалённых учётных записей) и статус участия.
+**Active** members can additionally see:
 
-**Активные** участники дополнительно могут видеть:
+- financial transactions, amounts, **account balances by currency**, dates, and accounting structure;
+- who created or edited entries (profile identifier and nickname).
 
-- финансовые операции, суммы, **остатки на счетах в разрезе валют**, даты и структуру учёта группы;
-- кто создал или изменил операцию (по идентификатору профиля и никнейму).
+Other members’ emails are **not shown** in the group UI. Email is processed only when **inviting** someone — when the owner enters an address to find a registered user.
 
-Email других участников **не отображается** в интерфейсе группы. Email обрабатывается только в момент **приглашения**, когда владелец вводит адрес для поиска зарегистрированного пользователя.
+After a member deletes their account, their **nickname** may remain visible to other group members (in the list with **Deleted** status and when viewing entry authorship). Their email is no longer available.
 
-После удаления учётной записи участника его **никнейм** может оставаться видимым другим участникам группы (в списке со статусом «Удалён» и при просмотре авторства операций). Email при этом недоступен.
+#### Encryption key and read-only mode
 
-#### Ключ шифрования и режим «только чтение»
+Editing sensitive fields (notes, object names, currency fields, etc.) requires the **group encryption key** on your device, obtained via your **secret phrase** or recovered from secure device storage.
 
-Доступ к **редактированию** чувствительных данных (заметки, названия объектов, поля валют и т.п.) требует **ключа шифрования группы** на вашем устройстве. Ключ получается через **секретную фразу** или восстанавливается из защищённого хранилища устройства.
+If the key is unavailable (for example, you signed in on a new device without entering your secret phrase), encrypted fields are shown **undecrypted** (as stored on the server), including **account and category names** in the object tree, **transaction notes**, and **currency reference fields** (name, code, symbol). Amounts, dates, and operation types (by category code) remain readable; in the transaction feed, the currency symbol may show as “#” without the key.
 
-Если ключ недоступен (например, вы вошли на новом устройстве и не ввели секретную фразу), зашифрованные поля отображаются **в нерасшифрованном виде** (как хранятся на сервере): в том числе **названия счетов и категорий** в дереве объектов, **заметки к операциям** и **поля валют** в справочнике (название, код, символ). Суммы, даты и типы операций (по коду категории) при этом остаются читаемыми; в ленте операций символ валюты без ключа может отображаться как «#».
+You **cannot** add, edit, or delete transactions until the key is restored (by entering your secret phrase or recovering from secure device storage, if available).
 
-Добавлять, изменять или удалять операции **нельзя** до восстановления ключа (ввод секретной фразы или восстановление из защищённого хранилища устройства, если оно доступно).
+When inviting a member, the owner shares an encrypted group key tied to the invitee’s public key.
 
-При приглашении участника владелец передаёт ему зашифрованный ключ группы, привязанный к публичному ключу приглашённого пользователя.
+#### Deletion and retention within groups
 
-#### Удаление и сохранение данных
+- **Account deletion** removes groups you own. In **other users’** groups, your entries may remain; your **nickname is retained** and shown with **Deleted** status. Your email and encryption keys are removed or anonymized.
+- **Group deletion** by the owner removes all group data for all members.
+- **Access revocation** for an active member ends their access; their past entries may remain in the shared ledger.
+- **Removing an invitation** (**Pending** or **Declined** status) deletes the membership record before the user joins the group.
 
-- При **удалении учётной записи** удаляются все ваши группы, где вы владелец. В **чужих** группах ваши операции могут сохраниться; **никнейм сохраняется** и отображается со статусом «Удалён». Email и ключи шифрования удаляются или обезличиваются.
-- При **удалении группы** владельцем удаляются все данные этой группы для всех участников.
-- При **отзыве доступа** у активного участника он теряет доступ к данным группы; ранее внесённые им операции могут остаться в общем учёте группы.
-- **Удаление приглашения** (статусы «Ожидает» или «Отклонён») убирает запись об участии до принятия в группу.
+### 3.7. In-app purchases
 
-### 3.7. Покупки в Приложении
+When you purchase a subscription or scan tokens for receipt recognition:
 
-При оформлении подписки или покупки токенов для распознавания чеков:
+- payment is processed through **Google Play**;
+- we receive subscription/purchase status via **RevenueCat** (user identifier, product, validity period, token balance).
 
-- платёж обрабатывается через **Google Play**;
-- мы получаем информацию о статусе подписки/покупки через **RevenueCat** (идентификатор пользователя, продукт, срок действия, баланс токенов).
+Payment card data is processed by Google, not by us.
 
-Данные банковской карты обрабатывает Google, не мы.
+### 3.8. Exchange rates
 
-### 3.8. Курсы валют
+Exchange rates are stored per accounting group and used to **convert amounts in reports** into a currency you choose (using the rate on the transaction date). Transactions and account balances remain recorded in their original currencies.
 
-Курсы валют хранятся в учётной группе и используются для **пересчёта сумм в отчётах** в выбранную валюту (по курсу на дату операции). Операции и остатки на счетах по-прежнему ведутся в исходных валютах.
+To import reference rates, the App calls the public **Frankfurter** API (`api.frankfurter.dev`) with currency codes and dates. No personal data is sent in these requests. You may also enter and edit rates manually.
 
-Для импорта справочных курсов Приложение обращается к публичному API **Frankfurter** (`api.frankfurter.dev`) с кодами валют и датами. Персональные данные в этих запросах не передаются. Вы можете также вводить и редактировать курсы вручную.
+### 3.9. Data export
 
-### 3.9. Экспорт данных
+At your request, the App builds a JSON file with group data and offers to save it via the system share sheet. Where the file is saved is up to you.
 
-По вашему запросу Приложение формирует JSON-файл с данными группы и предлагает сохранить его через системное меню «Поделиться». Куда именно сохранится файл — определяете вы.
+The export’s `users` block includes only **profile identifier** (`user_id`) and **nickname** (`nikname`). Email is **not** included in the export.
 
-В блоке участников экспорта (`users`) передаются только **идентификатор профиля** (`user_id`) и **никнейм** (`nikname`). Email в экспорт **не включается**.
+### 3.10. Technical data
 
-### 3.10. Технические данные
+- network requests to our backend (Supabase);
+- session tokens to keep you signed in;
+- profile and group identifiers on the server.
 
-- сетевые запросы к backend (Supabase);
-- токены сессии для поддержки входа;
-- идентификаторы профиля и групп на сервере.
+We do **not** use third-party advertising or analytics SDKs (Firebase Analytics, Crashlytics, etc.) to track your behavior.
 
-Мы **не** используем стороннюю рекламу и **не** подключаем аналитические SDK (Firebase Analytics, Crashlytics и т.п.) для отслеживания поведения.
+## 4. Why we process data
 
-## 4. Зачем мы обрабатываем данные
+- registration, sign-in, and session management;
+- storing and syncing your financial records;
+- encrypting sensitive text fields on the device;
+- collaboration in accounting groups and member access management;
+- receipt recognition at your request;
+- building reports with conversion of amounts into a selected currency (exchange rates);
+- paid features (subscription, scan tokens);
+- data export;
+- user support and legal compliance.
 
-- регистрация, вход и поддержка сессии;
-- хранение и синхронизация вашего финансового учёта;
-- шифрование чувствительных текстовых полей на устройстве;
-- совместная работа в группах учёта и управление доступом участников;
-- распознавание чеков по вашему запросу;
-- формирование отчётов с пересчётом сумм в выбранную валюту (курсы валют);
-- предоставление платных функций (подписка, токены сканирования);
-- экспорт данных;
-- поддержка пользователей и выполнение требований закона.
+**Legal bases (GDPR):** contract performance (providing the service); consent (camera, gallery, receipt recognition); legitimate interest (account security).
 
-**Правовые основания (GDPR):** исполнение договора (предоставление сервиса); согласие (камера, галерея, распознавание чеков); законный интерес (безопасность учётной записи).
+## 5. Who we share data with
 
-## 5. Кому мы передаём данные
+| Recipient | Purpose | Policy |
+|-----------|---------|--------|
+| **Supabase** | database hosting, authentication, server functions | [supabase.com/privacy](https://supabase.com/privacy) |
+| **OpenAI** | receipt recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
+| **Google Play** | payments and subscriptions | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| **RevenueCat** | subscription management | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
+| **Frankfurter** | reference exchange rates | [frankfurter.dev](https://www.frankfurter.dev/) |
 
-| Получатель | Назначение | Политика |
-|------------|------------|----------|
-| **Supabase** | хостинг БД, аутентификация, серверные функции | [supabase.com/privacy](https://supabase.com/privacy) |
-| **OpenAI** | распознавание чеков (по вашему действию) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
-| **Google Play** | платежи и подписки | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| **RevenueCat** | управление подписками | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
-| **Frankfurter** | справочные курсы валют | [frankfurter.dev](https://www.frankfurter.dev/) |
+We do **not sell** your personal data to third parties.
 
-Мы **не продаём** ваши персональные данные третьим лицам.
+## 6. Where data is stored
 
-## 6. Где хранятся данные
+Server data is hosted on **Supabase** (region: **Central Europe — Zurich, Switzerland**, `eu-central-2`).
 
-Данные на серверах **Supabase** (регион: **Центральная Европа — Цюрих, Швейцария**, `eu-central-2`).
+Encryption keys and session data are stored locally on your device in the OS secure storage (Android Keystore / iOS Keychain).
 
-Ключи шифрования и сессии — локально на вашем устройстве в защищённом хранилище ОС (Android Keystore / iOS Keychain).
+## 7. Security
 
-## 7. Защита данных
+- encryption of sensitive fields on the device (AES-256-GCM) before storage on the server;
+- asymmetric encryption (X25519) for group key exchange — also on the device;
+- secure local storage for keys;
+- group data access limited to group members (server access policies);
+- data in transit over HTTPS.
 
-- шифрование чувствительных полей на устройстве (AES-256-GCM) перед сохранением на сервере;
-- асимметричное шифрование (X25519) для обмена ключами в группах — также на устройстве;
-- защищённое локальное хранилище для ключей;
-- доступ к данным группы — только для участников этой группы (политики доступа на сервере);
-- передача данных по HTTPS.
+No system is 100% secure, but we apply reasonable technical and organizational safeguards.
 
-Ни одна система не гарантирует абсолютной безопасности, но мы принимаем разумные технические и организационные меры.
+## 8. Retention
 
-## 8. Срок хранения
+Data is kept while your account is active.
 
-Данные хранятся, пока действует ваша учётная запись.
+After **account deletion** (via “Delete account” in the App):
 
-После **удаления учётной записи** (пункт «Удалить учётную запись» в Приложении):
+- your data and groups you own are permanently deleted;
+- your entries in other users’ groups may remain;
+- your **nickname** may remain visible in others’ groups with **Deleted** status and in metadata of your entries;
+- your account and email are deleted; cryptographic profile data is removed or anonymized;
+- paid subscription is cancelled on our side; to stop future charges, cancel the subscription manually in Google Play.
 
-- ваши данные и группы, где вы владелец, удаляются безвозвратно;
-- ваши записи в группах других пользователей могут сохраниться;
-- **никнейм** сохраняется и может отображаться в группах других пользователей со статусом «Удалён» и в метаданных ваших операций;
-- учётная запись и email удаляются; криптографические данные профиля удаляются или обезличиваются;
-- оплаченная подписка аннулируется на нашей стороне; чтобы прекратить списание средств, отмените подписку вручную в Google Play.
+When **access is revoked** for an active member, they lose access to group data; their past entries may remain in the shared ledger.
 
-При **отзыве доступа** у активного участника он теряет доступ к данным группы; ранее внесённые им операции могут сохраняться в общем учёте.
+## 9. Your rights
 
-## 9. Ваши права
+You may:
 
-Вы можете:
+- view and edit your profile in the App;
+- export group data (JSON);
+- **delete your account** in the App;
+- revoke camera/gallery permission in device settings;
+- cancel your subscription in Google Play.
 
-- просматривать и изменять профиль в Приложении;
-- экспортировать данные группы (JSON);
-- **удалить учётную запись** в Приложении;
-- отозвать согласие на камеру/галерею в настройках устройства;
-- отменить подписку в Google Play.
+For access, correction, deletion, or restriction requests, contact: **[usnfinance@gmail.com]**.
 
-Для запросов о доступе, исправлении, удалении или ограничении обработки данных обращайтесь: **[usnfinance@gmail.com]**.
+Residents of the EU and other jurisdictions with applicable law may lodge a complaint with their supervisory authority.
 
-Жители ЕС и других юрисдикций с соответствующим законодательством могут подать жалобу в надзорный орган своей страны.
+## 10. Device permissions
 
-## 10. Разрешения устройства
+| Permission | Purpose |
+|------------|---------|
+| **Internet** | sync, authentication, services |
+| **Camera** | receipt photos, QR/barcode scan for receipt URL |
+| **Gallery / photos** | pick a receipt image (only when you choose to) |
 
-| Разрешение | Зачем |
-|------------|-------|
-| **Интернет** | синхронизация, аутентификация, сервисы |
-| **Камера** | фото чеков, сканирование QR/штрихкода для URL чека |
-| **Галерея / фото** | выбор изображения чека (только по вашему действию) |
+Permissions are requested when you use the related feature.
 
-Разрешения запрашиваются в момент использования соответствующей функции.
+## 11. Links and web content
 
-## 11. Ссылки и веб-просмотр
+For receipts by URL, the App may open a web page (WebView) or fetch its text. You enter or scan the link yourself. We do not control third-party website content.
 
-Для чеков по URL Приложение может открывать веб-страницу (WebView) или загружать её текст. Вы сами вводите или сканируете ссылку. Мы не контролируем содержимое сторонних сайтов.
+## 12. Changes to this Policy
 
-## 12. Изменения Политики
+We may update this Policy. The last updated date is at the top. We will notify you of material changes in the App or by email where required by law.
 
-Мы можем обновлять эту Политику. Дата последнего обновления указана в начале документа. О существенных изменениях сообщим в Приложении или на email, если это предусмотрено законом.
+## 13. Contact
 
-## 13. Контакты
-
-**ФОП Нинько Сергей Федорович**  
-Адрес регистрации: вул. Червоної Калини, 17д, кв. 60, м. Київ, 02225, Україна
+**FOP Nynko Serhii Fedorovych**  
+Registered address: 17d Chervonoi Kalyny St., apt. 60, Kyiv, 02225, Ukraine  
 Email: **usnfinance@gmail.com**
