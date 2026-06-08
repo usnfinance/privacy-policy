@@ -11,7 +11,7 @@ Operator of the **USN Finance** mobile application (the “App”, “we”, “
 - **Registered address:** 17d Chervonoi Kalyny St., apt. 60, Kyiv, 02225, Ukraine
 - Email: **usnfinance@gmail.com**
 
-The current version of this Policy is always available at: **[https://example.com/privacy]**
+The current version of this Policy is always available at: **[https://usnfinance.github.io/privacy-policy/en.html]**
 
 ## 2. Overview
 
