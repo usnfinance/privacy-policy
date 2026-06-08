@@ -11,7 +11,7 @@
 - **Адреса реєстрації:** вул. Червоної Калини, 17д, кв. 60, м. Київ, 02225, Україна
 - Email: **usnfinance@gmail.com**
 
-Актуальна версія цієї Політики завжди доступна за адресою: **[https://usnfinance.github.io/privacy-policy/ua.html]**
+Актуальна версія цієї Політики завжди доступна за адресою: **https://usnfinance.github.io/privacy-policy/ua.html**
 
 ## 2. Загальні положення
 
