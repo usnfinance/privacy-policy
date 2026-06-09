@@ -8,11 +8,7 @@ robots: noindex
 
 ## 1. Who we are
 
-Operator of the **USN Finance** mobile application (the “App”, “we”, “us”):
-
-- **FOP Nynko Serhii Fedorovych** (sole proprietor, Ukraine)
-- **Registered address:** 17d Chervonoi Kalyny St., apt. 60, Kyiv, 02225, Ukraine
-- Email: **usnfinance@gmail.com**
+Operator of the **USN Finance** mobile application (the “App”, “we”, “us”). Legal details and contact information are in section 13 “Contact”.
 
 The current version of this Policy is always available at: [https://usnfinance.github.io/privacy-policy/en.html](https://usnfinance.github.io/privacy-policy/en.html)
 
@@ -48,19 +44,19 @@ The App is intended for adults (18+) for personal and family financial tracking.
 
 The **secret phrase** you create when setting up a group is **not sent to our server**. It is used only on your device to derive encryption keys.
 
-### 3.4. Receipt recognition (only when you request it)
+### 3.4. Expense recognition (only when you request it)
 
 At your request, the App may process:
 
-- **receipt photos** (camera or gallery);
-- **receipt text** (paste, web page URL, QR/barcode);
+- **document photos** (camera or gallery);
+- **expense text** (paste, web page URL, QR/barcode);
 - **category names** for matching line items.
 
 This data is sent to our server (Supabase Edge Function) and then to **OpenAI** for automated recognition. Processing happens **within a single request**; the result is returned to the App.
 
-Receipt content (image or text) is **not stored in our database**. We do **not** keep a receipt recognition log. Processing by OpenAI is governed by [their privacy policy](https://openai.com/policies/privacy-policy).
+Document content (image or text) is **not stored in our database**. We do **not** keep a recognition log. Processing by OpenAI is governed by [their privacy policy](https://openai.com/policies/privacy-policy).
 
-When scan credits are charged (if that feature is enabled), we may store **operational data only** in the database: OpenAI token counts, charge amount, profile and group identifiers — **not** receipt content.
+When **AI Tokens** are charged for using a feature (if enabled), we may store **operational data only** in the database: AI Tokens charged, **OpenAI API request** token count (a technical metric, not your AI Tokens balance), profile and group identifiers — **not** document content.
 
 ### 3.5. Shared groups
 
@@ -127,12 +123,18 @@ When inviting a member, the owner shares an encrypted group key tied to the invi
 - **Access revocation** for an active member ends their access; their past entries may remain in the shared ledger.
 - **Removing an invitation** (**Pending** or **Declined** status) deletes the membership record before the user joins the group.
 
-### 3.7. In-app purchases
+### 3.7. Purchases and AI Tokens
 
-When you purchase a subscription or scan tokens for receipt recognition:
+#### In-app tokens (AI Tokens)
+
+We store on the server your **current AI Tokens balance** and **history of grants and charges**. AI Tokens are spent on **paid AI-powered features** in the App (currently expense recognition; the list may expand). This data is used for limits and balance display. Content you send to AI is handled under the relevant feature’s rules (see § 3.4).
+
+#### Subscription and AI Tokens purchases
+
+When you purchase a subscription or **AI Tokens**:
 
 - payment is processed through **Google Play**;
-- we receive subscription/purchase status via **RevenueCat** (user identifier, product, validity period, token balance).
+- we receive subscription/purchase status via **RevenueCat** (user identifier, product, validity period, AI Tokens balance).
 
 Payment card data is processed by Google, not by us.
 
@@ -162,20 +164,20 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 - storing and syncing your financial records;
 - encrypting sensitive text fields on the device;
 - collaboration in accounting groups and member access management;
-- receipt recognition at your request;
+- expense recognition at your request;
 - building reports with conversion of amounts into a selected currency (exchange rates);
-- paid features (subscription, scan tokens);
+- paid features (subscription, AI Tokens);
 - data export;
 - user support and legal compliance.
 
-**Legal bases (GDPR):** contract performance (providing the service); consent (camera, gallery, receipt recognition); legitimate interest (account security).
+**Legal bases (GDPR):** contract performance (providing the service); consent (camera, gallery, expense recognition); legitimate interest (account security).
 
 ## 5. Who we share data with
 
 | Recipient | Purpose | Policy |
 |-----------|---------|--------|
 | **Supabase** | database hosting, authentication, server functions | [supabase.com/privacy](https://supabase.com/privacy) |
-| **OpenAI** | receipt recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
+| **OpenAI** | expense recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
 | **Google Play** | payments and subscriptions | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **RevenueCat** | subscription management | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
 | **Frankfurter** | reference exchange rates | [frankfurter.dev](https://www.frankfurter.dev/) |
@@ -231,14 +233,14 @@ Residents of the EU and other jurisdictions with applicable law may lodge a comp
 | Permission | Purpose |
 |------------|---------|
 | **Internet** | sync, authentication, services |
-| **Camera** | receipt photos, QR/barcode scan for receipt URL |
-| **Gallery / photos** | pick a receipt image (only when you choose to) |
+| **Camera** | document photos, QR/barcode scan for document URL |
+| **Gallery / photos** | pick a document image (only when you choose to) |
 
 Permissions are requested when you use the related feature.
 
 ## 11. Links and web content
 
-For receipts by URL, the App may open a web page (WebView) or fetch its text. You enter or scan the link yourself. We do not control third-party website content.
+For documents by URL, the App may open a web page (WebView) or fetch its text. You enter or scan the link yourself. We do not control third-party website content.
 
 ## 12. Changes to this Policy
 
