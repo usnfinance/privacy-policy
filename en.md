@@ -4,7 +4,7 @@ robots: noindex
 # Privacy Policy — USN Finance
 
 **Effective date:** 07/11/2026  
-**Last updated:** 07/11/2026
+**Last updated:** 08/01/2026
 
 ## 1. Who we are
 
@@ -123,11 +123,22 @@ When inviting a member, the owner shares an encrypted group key tied to the invi
 - **Access revocation** for an active member ends their access; their past entries may remain in the shared ledger.
 - **Removing an invitation** (**Pending** or **Declined** status) deletes the membership record before the user joins the group.
 
-### 3.7. AI Tokens
+### 3.7. Purchases and AI Tokens
 
-We store on the server your **current AI Tokens balance** and **history of grants and charges**. AI Tokens are spent on **AI-powered features** in the App (currently expense recognition; the list may expand). This data is used for limits and balance display. Content you send to AI is handled under the relevant feature’s rules (see § 3.4).
+#### In-app tokens (AI Tokens)
 
-**In-app purchases** (subscription or buying AI Tokens through Google Play) are **not available in the current version** of the App. Your balance may be granted administratively; there is no payment flow in the App at this time.
+We store on the server your **current AI Tokens balance** and **history of grants and charges**. AI Tokens are spent on **paid AI-powered features** in the App (currently expense recognition; the list may expand). This data is used for limits and balance display. Content you send to AI is handled under the relevant feature’s rules (see § 3.4).
+
+AI Tokens balance may also be granted **as a promo or administratively** (for example, a signup bonus), without a store payment.
+
+#### Subscription and AI Tokens purchases
+
+When you purchase a subscription or **AI Tokens**:
+
+- payment is processed through **Google Play** or the **App Store** (depending on your device platform);
+- we receive subscription/purchase status via **RevenueCat** (user profile identifier, product, validity period, transaction details; AI Tokens balance is updated on our server).
+
+Payment card data is processed by the app store (Google or Apple), not by us.
 
 ### 3.8. Exchange rates
 
@@ -157,7 +168,7 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 - collaboration in accounting groups and member access management;
 - expense recognition at your request;
 - building reports with conversion of amounts into a selected currency (exchange rates);
-- AI-powered features with AI Tokens limits;
+- paid features (subscription, AI Tokens);
 - data export;
 - user support and legal compliance.
 
@@ -169,6 +180,9 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 |-----------|---------|--------|
 | **Supabase** | database hosting, authentication, server functions | [supabase.com/privacy](https://supabase.com/privacy) |
 | **OpenAI** | expense recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
+| **Google Play** | payments and subscriptions | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| **App Store** | payments and subscriptions | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
+| **RevenueCat** | subscription and purchase management | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
 | **Frankfurter** | reference exchange rates | [frankfurter.dev](https://www.frankfurter.dev/) |
 
 We do **not sell** your personal data to third parties.
@@ -199,7 +213,8 @@ After **account deletion** (via “Delete account” in the App):
 - your entries in other users’ groups may remain;
 - your **nickname** may remain visible in others’ groups with **Deleted** status and in metadata of your entries;
 - your account and email are deleted; cryptographic profile data is removed or anonymized;
-- your AI Tokens balance and ledger records associated with your account are deleted.
+- your AI Tokens balance and ledger records associated with your account are deleted;
+- paid subscription is cancelled on our side; to stop future charges, cancel the subscription manually in **Google Play** or the **App Store**.
 
 When **access is revoked** for an active member, they lose access to group data; their past entries may remain in the shared ledger.
 
@@ -210,7 +225,8 @@ You may:
 - view and edit your profile in the App;
 - export group data (JSON);
 - **delete your account** in the App;
-- revoke camera/gallery permission in device settings.
+- revoke camera/gallery permission in device settings;
+- cancel your subscription in the app store (**Google Play** or the **App Store**).
 
 For access, correction, deletion, or restriction requests, contact: **[usnfinance@gmail.com]**.
 
