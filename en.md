@@ -4,7 +4,7 @@ robots: noindex
 # Privacy Policy — USN Finance
 
 **Effective date:** 07/11/2026  
-**Last updated:** 08/01/2026
+**Last updated:** 08/09/2026
 
 ## 1. Who we are
 
@@ -118,7 +118,7 @@ When inviting a member, the owner shares an encrypted group key tied to the invi
 
 #### Deletion and retention within groups
 
-- **Account deletion** removes groups you own. In **other users’** groups, your entries may remain; your **nickname is retained** and shown with **Deleted** status. Your email and encryption keys are removed or anonymized.
+- **Account deletion** removes groups you own. In **other users’** groups, your entries may remain; your **nickname is retained** and shown with **Deleted** status. Your email and encryption keys are deleted.
 - **Group deletion** by the owner removes all group data for all members.
 - **Access revocation** for an active member ends their access; their past entries may remain in the shared ledger.
 - **Removing an invitation** (**Pending** or **Declined** status) deletes the membership record before the user joins the group.
@@ -212,7 +212,7 @@ After **account deletion** (via “Delete account” in the App):
 - your data and groups you own are permanently deleted;
 - your entries in other users’ groups may remain;
 - your **nickname** may remain visible in others’ groups with **Deleted** status and in metadata of your entries;
-- your account and email are deleted; cryptographic profile data is removed or anonymized;
+- your account and email are deleted; cryptographic profile data is deleted;
 - your AI Tokens balance and ledger records associated with your account are deleted;
 - paid subscription is cancelled on our side; to stop future charges, cancel the subscription manually in **Google Play** or the **App Store**.
 
@@ -248,7 +248,7 @@ For documents by URL, the App may open a web page (WebView) or fetch its text. Y
 
 ## 12. Changes to this Policy
 
-We may update this Policy. The last updated date is at the top. We will notify you of material changes in the App or by email where required by law.
+We may update this Policy. The last updated date is at the top. We may notify you of material changes in the App.
 
 ## 13. Contact
 
