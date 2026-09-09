@@ -1,14 +1,13 @@
----
-robots: noindex
----
 # Privacy Policy — USN Finance
 
 **Effective date:** 07/11/2026  
-**Last updated:** 08/09/2026
+**Last updated:** 09/09/2026
 
 ## 1. Who we are
 
 Operator of the **USN Finance** mobile application (the “App”, “we”, “us”). Legal details and contact information are in section 13 “Contact”.
+
+The App is available on [Google Play](https://play.google.com/store/apps/details?id=com.usn.finance) (package ID `com.usn.finance`).
 
 The current version of this Policy is always available at: [https://usnfinance.github.io/privacy-policy/en.html](https://usnfinance.github.io/privacy-policy/en.html)
 

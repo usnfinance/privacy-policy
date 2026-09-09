@@ -1,14 +1,13 @@
----
-robots: noindex
----
 # Политика конфиденциальности USN Finance
 
 **Дата вступления в силу:** 11.07.2026  
-**Последнее обновление:** 09.08.2026
+**Последнее обновление:** 09.09.2026
 
 ## 1. Кто мы
 
 Оператор мобильного приложения **USN Finance** (далее — «Приложение», «мы»). Реквизиты и контакты — в разделе 13 «Контакты».
+
+Приложение доступно в [Google Play](https://play.google.com/store/apps/details?id=com.usn.finance) (идентификатор `com.usn.finance`).
 
 Актуальная версия Политики всегда доступна по адресу: [https://usnfinance.github.io/privacy-policy/ru.html](https://usnfinance.github.io/privacy-policy/ru.html)
 

@@ -1,14 +1,13 @@
----
-robots: noindex
----
 # Політика конфіденційності USN Finance
 
 **Дата набрання чинності:** 11.07.2026  
-**Останнє оновлення:** 09.08.2026
+**Останнє оновлення:** 09.09.2026
 
 ## 1. Хто ми
 
 Оператор мобільного додатку **USN Finance** (далі — «Додаток», «ми»). Реквізити та контакти — у розділі 13 «Контакти».
+
+Додаток доступний у [Google Play](https://play.google.com/store/apps/details?id=com.usn.finance) (ідентифікатор `com.usn.finance`).
 
 Актуальна версія цієї Політики завжди доступна за адресою: [https://usnfinance.github.io/privacy-policy/ua.html](https://usnfinance.github.io/privacy-policy/ua.html)
 
