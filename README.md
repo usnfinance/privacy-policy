@@ -4,7 +4,6 @@
 
 Мобільний додаток **USN Finance** для особистого та сімейного фінансового обліку.
 
-Оператор: **ФОП Нинько Сергій Федорович**  
 Email: [usnfinance@gmail.com](mailto:usnfinance@gmail.com)
 
 ---
