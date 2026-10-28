@@ -1,7 +1,7 @@
 # Privacy Policy — USN Finance
 
 **Effective date:** 07/11/2026  
-**Last updated:** 09/09/2026
+**Last updated:** 28/10/2026
 
 ## 1. Who we are
 
@@ -25,9 +25,11 @@ The App is intended for adults (18+) for personal and family financial tracking.
 
 ### 3.1. Account and profile
 
-- **Email address** — for sign-in via magic link (one-time link sent by email);
+- **Email address** — for sign-in via magic link (one-time link sent by email) or via Google (the same address from the Google account);
 - **Nickname** — set once at registration, one per account; displayed in accounting groups;
 - **Interface language** — your preference settings.
+
+If you sign in with Google, Google sends the sign-in service (Supabase) your email address, a technical Google account identifier, and the name and profile photo link from your Google account. We use the email address for your account. You choose the nickname yourself. Your financial data is not sent to Google.
 
 ### 3.2. Financial and accounting data
 
@@ -179,6 +181,7 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 |-----------|---------|--------|
 | **Supabase** | database hosting, authentication, server functions | [supabase.com/privacy](https://supabase.com/privacy) |
 | **OpenAI** | expense recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
+| **Google** | sign-in with a Google account (separate from Google Play payments) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **Google Play** | payments and subscriptions | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **App Store** | payments and subscriptions | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | **RevenueCat** | subscription and purchase management | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |

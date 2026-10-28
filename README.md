@@ -18,4 +18,4 @@ Email: [usnfinance@gmail.com](mailto:usnfinance@gmail.com)
 
 ---
 
-**Останнє оновлення / Последнее обновление / Last updated:** 09.09.2026
+**Останнє оновлення / Последнее обновление / Last updated:** 28.10.2026

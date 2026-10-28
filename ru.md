@@ -1,7 +1,7 @@
 # Политика конфиденциальности USN Finance
 
 **Дата вступления в силу:** 11.07.2026  
-**Последнее обновление:** 09.09.2026
+**Последнее обновление:** 28.10.2026
 
 ## 1. Кто мы
 
@@ -25,9 +25,11 @@
 
 ### 3.1. Учётная запись и профиль
 
-- **Email** — для входа через magic link (одноразовая ссылка в письме);
+- **Email** — для входа через magic link (одноразовая ссылка в письме) или через Google (та же почта из аккаунта Google);
 - **Никнейм** — задаётся при регистрации, один на учётную запись; отображается в группах учёта;
 - **Язык интерфейса** — сохранение ваших настроек.
+
+Если вы входите через Google, Google передаёт сервису входа (Supabase) адрес электронной почты, технический идентификатор аккаунта Google, а также имя и ссылку на фото профиля из аккаунта Google. Для учётной записи мы используем email. Никнейм вы задаёте сами. Ваши финансовые данные Google не передаются.
 
 ### 3.2. Финансовые и учётные данные
 
@@ -181,6 +183,7 @@ Email других участников **не отображается** в и�
 |------------|------------|----------|
 | **Supabase** | хостинг БД, аутентификация, серверные функции | [supabase.com/privacy](https://supabase.com/privacy) |
 | **OpenAI** | распознавание расходов (по вашему действию) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
+| **Google** | вход через аккаунт Google (отдельно от оплаты в Google Play) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **Google Play** | платежи и подписки | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **App Store** | платежи и подписки | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | **RevenueCat** | управление подписками и покупками | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
