@@ -1,7 +1,7 @@
 # Privacy Policy — USN Finance
 
 **Effective date:** 07/11/2026  
-**Last updated:** 28/10/2026
+**Last updated:** 06/11/2026
 
 ## 1. Who we are
 
@@ -90,22 +90,22 @@ There is no separate “admin” role — only **owner** and **member**.
 - **Active** — full group access;
 - **Declined** — invitation rejected;
 - **Access revoked** — owner revoked access;
-- **Deleted** — the user deleted their account. They may appear in the group member list with this status and a retained nickname; they have no access to group data. Past entries they created may remain in the ledger with authorship shown.
+- **Deleted** — the user deleted their account. They appear in the group member list with this status and the common mark “deleted” instead of their former nickname; they have no access to group data. Past entries they created remain in the ledger. The profile identifier on those entries is kept.
 
-Only **active** members use group data in the normal way. Members with **Deleted** status remain visible in the list for transparency of entry authorship but cannot access the group. Access to a specific group’s data is provided in the context of your **current session** (the group selected in the App).
+Only **active** members use group data in the normal way. Members with **Deleted** status remain in the list with the mark “deleted” and cannot access the group. Access to a specific group’s data is provided in the context of your **current session** (the group selected in the App).
 
 #### What other members can see
 
-If you belong to a group, other members of that group with access to its data or member list can see **nicknames of all group members** (including invited, access-revoked, and deleted accounts) and membership status.
+If you belong to a group, other members of that group with access to its data or member list can see **nicknames of group members** (including invited and access-revoked members) and membership status. Deleted accounts are shown with the common mark “deleted” instead of the former nickname.
 
 **Active** members can additionally see:
 
 - financial transactions, amounts, **account balances by currency**, dates, and accounting structure;
-- who created or edited entries (profile identifier and nickname).
+- who created or edited entries (profile identifier and nickname). For a deleted account, the nickname is replaced with “deleted”.
 
 Other members’ emails are **not shown** in the group UI. Email is processed only when **inviting** someone — when the owner enters an address to find a registered user.
 
-After a member deletes their account, their **nickname** may remain visible to other group members (in the list with **Deleted** status and when viewing entry authorship). Their email is no longer available.
+After a member deletes their account, their chosen **nickname is replaced** with the common mark “deleted”. Other members see this mark in the list with **Deleted** status and on that member’s past entries. Their email is no longer available. The profile identifier on those entries is kept.
 
 #### Encryption key and read-only mode
 
@@ -119,9 +119,9 @@ When inviting a member, the owner shares an encrypted group key tied to the invi
 
 #### Deletion and retention within groups
 
-- **Account deletion** removes groups you own. In **other users’** groups, your entries may remain; your **nickname is retained** and shown with **Deleted** status. Your email and encryption keys are deleted.
+- **Account deletion** permanently deletes every group you own, together with its data. In **other users’** groups, entries you created are kept so their financial records stay complete. Your account, email, and encryption keys are deleted. The nickname you chose at registration is replaced with the common mark “deleted”. The profile identifier on those entries is kept.
 - **Group deletion** by the owner removes all group data for all members.
-- **Access revocation** for an active member ends their access; their past entries may remain in the shared ledger.
+- **Access revocation** for an active member ends their access. Transactions they already entered in that group stay in the shared ledger.
 - **Removing an invitation** (**Pending** or **Declined** status) deletes the membership record before the user joins the group.
 
 ### 3.7. Purchases and AI Tokens
@@ -130,16 +130,16 @@ When inviting a member, the owner shares an encrypted group key tied to the invi
 
 We store on the server your **current AI Tokens balance** and **history of grants and charges**. AI Tokens are spent on **paid AI-powered features** in the App (currently expense recognition; the list may expand). This data is used for limits and balance display. Content you send to AI is handled under the relevant feature’s rules (see § 3.4).
 
-AI Tokens balance may also be granted **as a promo or administratively** (for example, a signup bonus), without a store payment.
+AI Tokens balance may also be granted **as a promo or administratively** (for example, a signup bonus), without a Google Play payment.
 
 #### Subscription and AI Tokens purchases
 
 When you purchase a subscription or **AI Tokens**:
 
-- payment is processed through **Google Play** or the **App Store** (depending on your device platform);
+- payment is processed through **Google Play**;
 - we receive subscription/purchase status via **RevenueCat** (user profile identifier, product, validity period, transaction details; AI Tokens balance is updated on our server).
 
-Payment card data is processed by the app store (Google or Apple), not by us.
+Payment card data is processed by Google Play, not by us.
 
 ### 3.8. Exchange rates
 
@@ -151,7 +151,7 @@ To import reference rates, the App calls the public **Frankfurter** API (`api.fr
 
 At your request, the App builds a JSON file with group data and offers to save it via the system share sheet. Where the file is saved is up to you.
 
-The export’s `users` block includes only **profile identifier** (`user_id`) and **nickname** (`nikname`). Email is **not** included in the export.
+The export’s `users` block includes only **profile identifier** (`user_id`) and **nickname** (`nikname`). Email is **not** included in the export. If the member has deleted their account, the nickname field contains the mark “deleted”, not their former nickname.
 
 ### 3.10. Technical data
 
@@ -173,7 +173,7 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 - data export;
 - user support and legal compliance.
 
-**Legal bases (GDPR):** contract performance (providing the service); consent (camera, gallery, expense recognition); legitimate interest (account security).
+**Legal bases (GDPR):** contract performance (providing the service); consent (camera, gallery, expense recognition); legitimate interest (account security; keeping entries in other users’ groups so their financial records stay complete).
 
 ## 5. Who we share data with
 
@@ -183,11 +183,10 @@ We do **not** use third-party advertising or analytics SDKs (Firebase Analytics,
 | **OpenAI** | expense recognition (your action) | [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy) |
 | **Google** | sign-in with a Google account (separate from Google Play payments) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **Google Play** | payments and subscriptions | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| **App Store** | payments and subscriptions | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | **RevenueCat** | subscription and purchase management | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
 | **Frankfurter** | reference exchange rates | [frankfurter.dev](https://www.frankfurter.dev/) |
 
-We do **not sell** your personal data to third parties.
+We share the data in the table only to run the App: sign-in, storing your records, expense recognition when you ask for it, payments, and exchange rates. We do **not sell** personal data and do **not share** it for advertising or marketing.
 
 ## 6. Where data is stored
 
@@ -212,13 +211,13 @@ Data is kept while your account is active.
 After **account deletion** (via “Delete account” in the App):
 
 - your data and groups you own are permanently deleted;
-- your entries in other users’ groups may remain;
-- your **nickname** may remain visible in others’ groups with **Deleted** status and in metadata of your entries;
+- entries you created in other users’ groups are kept in those groups;
+- your chosen nickname is replaced with the common mark “deleted”; the profile identifier may remain on those entries;
 - your account and email are deleted; cryptographic profile data is deleted;
 - your AI Tokens balance and ledger records associated with your account are deleted;
-- paid subscription is cancelled on our side; to stop future charges, cancel the subscription manually in **Google Play** or the **App Store**.
+- paid subscription is cancelled on our side; to stop future charges, cancel the subscription manually in **Google Play**.
 
-When **access is revoked** for an active member, they lose access to group data; their past entries may remain in the shared ledger.
+When **access is revoked** for an active member, they lose access to group data. Transactions they already entered in that group stay in the shared ledger.
 
 ## 9. Your rights
 
@@ -228,7 +227,7 @@ You may:
 - export group data (JSON);
 - **delete your account** in the App;
 - revoke camera/gallery permission in device settings;
-- cancel your subscription in the app store (**Google Play** or the **App Store**).
+- cancel your subscription in **Google Play**.
 
 For access, correction, deletion, or restriction requests, contact: **[usnfinance@gmail.com]**.
 
